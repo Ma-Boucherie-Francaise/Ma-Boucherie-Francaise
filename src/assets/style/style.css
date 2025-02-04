@@ -20,6 +20,18 @@ img {
      object-position: center;
 }
 
+.redColor {
+  color: #b10000;
+}
+
+.brownColor {
+  color: #630000;
+}
+
+.whiteColor {
+  color: #ffffff;
+}
+
 @font-face {
   font-family: "AwesomeSerif";
   src: url(/public/fonts/AwesomeSerif-BoldExtraTall.otf);

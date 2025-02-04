@@ -1,8 +1,23 @@
 import { Link } from "react-router-dom";
 import BadgeBR from "/BadgeBR.png";
 import MBFLogoRouge from "/MBFLogoRouge.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMagnifyingGlass,
+  faCartShopping,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
+  return (
+    <header>
+      <img className="badge" src={BadgeBR} alt="Image Badge" />
+      <CenterDiv />
+      <RightDiv />
+    </header>
+  );
+}
+
+function CenterDiv() {
   const links = [
     { link: "Home", src: "/" },
     { link: "Histoire", src: "/" },
@@ -10,25 +25,31 @@ export default function Header() {
     { link: "Livraison", src: "/" },
     { link: "FAQ", src: "/" },
   ];
-  return (
-    <header>
-      <img className="badge" src={BadgeBR} alt="Image Badge" />
 
-      <div className="center">
-        <div className="image">
-          <img src={MBFLogoRouge} alt="Logo MBF" />
-        </div>
-        <div className="links">
-          {links.map(({ link, src }, i) => {
-            return (
-              <Link key={i} to={src}>
-                {link}
-              </Link>
-            );
-          })}
-        </div>
+  return (
+    <div className="center">
+      <div className="image">
+        <img src={MBFLogoRouge} alt="Logo MBF" />
       </div>
-      <div>ah</div>
-    </header>
+      <div className="links">
+        {links.map(({ link, src }, i) => {
+          return (
+            <Link key={i} to={src}>
+              {link}
+            </Link>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function RightDiv() {
+  return (
+    <div className="right">
+      <input type="search" />
+      <FontAwesomeIcon icon={faMagnifyingGlass} />
+      <FontAwesomeIcon icon={faCartShopping} />
+    </div>
   );
 }
