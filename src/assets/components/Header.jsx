@@ -1,3 +1,24 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
-  return <div>Header</div>;
+  const links = [
+    { link: "Home", src: "/" },
+    { link: "Histoire", src: "/" },
+    { link: "Produits", src: "/" },
+    { link: "Livraison", src: "/" },
+    { link: "FAQ", src: "/" },
+  ];
+  return (
+    <header>
+      <div className="links">
+        {links.map(({ src, link }, i) => {
+          return (
+            <Link key={i} to={src}>
+              {link}
+            </Link>
+          );
+        })}
+      </div>
+    </header>
+  );
 }
