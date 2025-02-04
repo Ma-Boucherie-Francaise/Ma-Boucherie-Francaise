@@ -3,7 +3,7 @@ import TitlePage from "../components/TitlePage";
 export default function Histoire() {
   return (
     <>
-      <TitlePage title="Histoire" />
+      <TitlePage title="Histoire —" />
       <main>Histoire</main>
     </>
   );

@@ -5,7 +5,7 @@ import Pattern4Rouge from "/PatternRouge4.png";
 export default function Accueil() {
   return (
     <>
-      <TitlePage title="Accueil" />
+      <TitlePage title="" />
       <main id="Accueil">
         <FirstSection />
       </main>
