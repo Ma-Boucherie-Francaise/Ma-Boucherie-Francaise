@@ -1,3 +1,10 @@
+import TitlePage from "../components/TitlePage";
+
 export default function Accueil() {
-  return <main id="Accueil">Home</main>;
+  return (
+    <>
+      <TitlePage title="Accueil" />
+      <main id="Accueil">Home</main>
+    </>
+  );
 }
