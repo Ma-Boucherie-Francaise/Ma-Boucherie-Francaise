@@ -162,7 +162,7 @@ header .right .cartShopping:hover {
 #Accueil .FirstSection .title h1 {
   font-family: "AwesomeSerif";
 }
-#Accueil .FirstSection button {
+#Accueil .FirstSection .button {
   font-size: 20px;
   text-transform: uppercase;
   color: #ffffff;
@@ -173,7 +173,7 @@ header .right .cartShopping:hover {
   padding: 15px 25px;
   border-radius: 30px;
 }
-#Accueil .FirstSection button:hover {
+#Accueil .FirstSection .button:hover {
   cursor: pointer;
 }
 #Accueil .FirstSection .patternContainer {

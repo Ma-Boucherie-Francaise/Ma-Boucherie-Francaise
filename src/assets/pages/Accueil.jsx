@@ -23,7 +23,9 @@ function FirstSection() {
         <h1>Le goût de l'excellence,</h1>
         <p>directement chez vous.</p>
       </div>
-      <button>Découvrez nos viandes</button>
+      <a href="#" className="button">
+        Découvrez nos viandes
+      </a>
       <div className="patternContainer">
         <img src={Pattern4Rouge} alt="patternRouge" />
         <img src={Pattern4Rouge} alt="patternRouge" />
