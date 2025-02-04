@@ -4,7 +4,13 @@ export default function Accueil() {
   return (
     <>
       <TitlePage title="Accueil" />
-      <main id="Accueil">Home</main>
+      <main id="Accueil">
+        <FirstSection />
+      </main>
     </>
   );
+}
+
+function FirstSection() {
+  return <div className="FirstSection">Home</div>;
 }
