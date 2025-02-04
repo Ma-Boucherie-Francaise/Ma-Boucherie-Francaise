@@ -1,4 +1,5 @@
 import TitlePage from "../components/TitlePage";
+import ImageAccueil from "/ImageAccueil.jpg";
 
 export default function Accueil() {
   return (
@@ -12,5 +13,11 @@ export default function Accueil() {
 }
 
 function FirstSection() {
-  return <div className="FirstSection">Home</div>;
+  return (
+    <section className="FirstSection">
+      <div className="image">
+        <img src={ImageAccueil} alt="image accueil" />
+      </div>
+    </section>
+  );
 }

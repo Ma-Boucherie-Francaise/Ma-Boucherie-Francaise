@@ -128,6 +128,25 @@ header .right .cartShopping:hover {
 }
 
 #Accueil .FirstSection {
-  background: #b10000;
-  height: 100vh;
+  height: 83vh;
+}
+#Accueil .FirstSection .image {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  filter: brightness(0.95);
+  background: white;
+}
+#Accueil .FirstSection .image img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }/*# sourceMappingURL=style.css.map */
