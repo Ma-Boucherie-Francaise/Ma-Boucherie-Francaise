@@ -20,7 +20,7 @@ export default function Header() {
 function CenterDiv() {
   const links = [
     { link: "Accueil", src: "/" },
-    { link: "Histoire", src: "/" },
+    { link: "Histoire", src: "/histoire" },
     { link: "Produits", src: "/" },
     { link: "Livraison", src: "/" },
     { link: "FAQ", src: "/" },
