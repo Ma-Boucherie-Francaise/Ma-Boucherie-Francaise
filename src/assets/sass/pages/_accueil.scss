@@ -3,13 +3,19 @@
     position: relative;
     height: 83vh;
     color: $White;
-    font-size: 45px;
+
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5vh;
+
+    .title {
+      p {
+        font-size: 45px;
+      }
+    }
 
     .image {
       position: absolute;
@@ -28,11 +34,6 @@
         width: 65%;
         object-fit: cover;
         object-position: center;
-      }
-    }
-    .title {
-      h1 {
-        font-family: "AwesomeSerif";
       }
     }
 

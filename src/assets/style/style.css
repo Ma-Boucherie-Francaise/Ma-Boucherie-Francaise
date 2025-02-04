@@ -14,6 +14,11 @@ a {
   color: inherit;
 }
 
+h1 {
+  font-family: "AwesomeSerif";
+  font-size: 65px;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -131,13 +136,15 @@ header .right .cartShopping:hover {
   position: relative;
   height: 83vh;
   color: #ffffff;
-  font-size: 45px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5vh;
+}
+#Accueil .FirstSection .title p {
+  font-size: 45px;
 }
 #Accueil .FirstSection .image {
   position: absolute;
@@ -158,9 +165,6 @@ header .right .cartShopping:hover {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-}
-#Accueil .FirstSection .title h1 {
-  font-family: "AwesomeSerif";
 }
 #Accueil .FirstSection .button {
   font-size: 20px;

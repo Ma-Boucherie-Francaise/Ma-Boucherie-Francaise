@@ -5,7 +5,7 @@ export default function Histoire() {
   return (
     <>
       <TitlePage title="Histoire —" />
-      <main id="Histoire">
+      <main id="Histoire" className="redColor">
         <FirstSection />
       </main>
     </>
