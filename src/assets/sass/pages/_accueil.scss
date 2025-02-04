@@ -1,8 +1,18 @@
 #Accueil {
   .FirstSection {
+    position: relative;
     height: 83vh;
+    color: $White;
+    font-size: 45px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+
     .image {
-      position: relative;
+      position: absolute;
       z-index: -1;
       width: 100%;
       height: 100%;
@@ -18,6 +28,39 @@
         width: 65%;
         object-fit: cover;
         object-position: center;
+      }
+    }
+    .title {
+      h1 {
+        font-family: "AwesomeSerif";
+      }
+    }
+
+    button {
+      font-size: 20px;
+      text-transform: uppercase;
+      color: $White;
+      background: $Red;
+      border: none;
+      width: fit-content;
+      padding: 15px 25px;
+      border-radius: 30px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .patternContainer {
+      position: absolute;
+      bottom: 2vh;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      img {
+        height: 53px;
+        width: 370px;
       }
     }
   }
