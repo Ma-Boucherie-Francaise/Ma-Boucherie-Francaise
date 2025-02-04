@@ -120,4 +120,9 @@ header .right .cartShopping {
 }
 header .right .cartShopping:hover {
   cursor: pointer;
+}
+
+#Accueil {
+  background: red;
+  height: 100vh;
 }/*# sourceMappingURL=style.css.map */
