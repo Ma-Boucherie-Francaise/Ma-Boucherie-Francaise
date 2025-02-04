@@ -45,7 +45,7 @@ header {
           width: 100%;
           transform: scaleX(0);
           transform-origin: right;
-          height: 1px;
+          height: 2px;
           background: $Red;
           transition: transform 0.3s cubic-bezier(0.65, 0, 0.35, 1);
         }
