@@ -1,3 +1,10 @@
+import TitlePage from "../components/TitlePage";
+
 export default function Histoire() {
-  return <main>Histoire</main>;
+  return (
+    <>
+      <TitlePage title="Histoire" />
+      <main>Histoire</main>
+    </>
+  );
 }
