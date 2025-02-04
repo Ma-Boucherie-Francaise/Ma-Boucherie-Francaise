@@ -1,0 +1,36 @@
+header {
+  color: $Red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2vw;
+
+  .badge {
+    width: 130px;
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+    .image {
+      height: 100px;
+      pointer-events: none;
+
+      img {
+        transform: scale(4);
+      }
+    }
+
+    .links {
+      display: flex;
+      gap: 2vw;
+
+      a {
+        font-weight: 500;
+      }
+    }
+  }
+}

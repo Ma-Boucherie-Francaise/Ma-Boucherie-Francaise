@@ -3,3 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+a {
+  font-family: "Golos Text";
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
