@@ -5,8 +5,11 @@
   box-sizing: border-box;
 }
 
-a {
+body {
   font-family: "Golos Text";
+}
+
+a {
   text-decoration: none;
   color: inherit;
 }
