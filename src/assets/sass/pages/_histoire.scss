@@ -1,3 +1,46 @@
 #Histoire {
-  padding: 0 5vw;
+  display: flex;
+  justify-content: center;
+  padding: 20px 5vw;
+
+  .FirstSection {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    height: 700px;
+
+    .contentContainer {
+      flex-grow: 1;
+      display: flex;
+      margin-top: 20px;
+
+      img {
+        width: 50%;
+        height: 100%;
+      }
+
+      .textsContainer {
+        padding-left: 5vw;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .paragraph {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          text-align: justify;
+
+          p {
+            font-weight: 600;
+          }
+
+          span,
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
 }
