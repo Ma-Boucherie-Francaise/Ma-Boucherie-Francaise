@@ -4,6 +4,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 2vw;
+  box-shadow: 0px -9px 39px 13px rgb(0 0 0 / 37%);
 
   .badge {
     width: 130px;
@@ -13,7 +14,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
 
     .image {
       height: 100px;
@@ -30,6 +30,66 @@ header {
 
       a {
         font-weight: 500;
+        position: relative;
+
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -10%;
+          left: 0;
+          width: 100%;
+          transform: scaleX(0);
+          transform-origin: right;
+          height: 1px;
+          background: $Red;
+          transition: transform 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+        }
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+
+    .inputContainer {
+      position: relative;
+
+      input {
+        outline: none;
+        border-radius: 20px;
+        border: 1px solid $Red;
+        padding: 10px 10px 10px 30px;
+        width: 10vw;
+        caret-color: $Red;
+        color: $Red;
+
+        &::placeholder {
+          color: $Red;
+          font-size: 15px;
+        }
+      }
+
+      .searchIcon {
+        position: absolute;
+        font-size: 12px;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    .cartShopping {
+      font-size: 25px;
+
+      &:hover {
+        cursor: pointer;
       }
     }
   }

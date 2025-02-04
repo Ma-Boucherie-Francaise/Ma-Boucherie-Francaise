@@ -42,6 +42,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 2vw;
+  box-shadow: 0px -9px 39px 13px rgba(0, 0, 0, 0.37);
 }
 header .badge {
   width: 130px;
@@ -50,7 +51,6 @@ header .center {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
 }
 header .center .image {
   height: 100px;
@@ -65,4 +65,59 @@ header .center .links {
 }
 header .center .links a {
   font-weight: 500;
+  position: relative;
+}
+header .center .links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+header .center .links a::after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  height: 1px;
+  background: #b10000;
+  transition: transform 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+header .right {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+header .right .inputContainer {
+  position: relative;
+}
+header .right .inputContainer input {
+  outline: none;
+  border-radius: 20px;
+  border: 1px solid #b10000;
+  padding: 10px 10px 10px 30px;
+  width: 10vw;
+  caret-color: #b10000;
+  color: #b10000;
+}
+header .right .inputContainer input::-moz-placeholder {
+  color: #b10000;
+  font-size: 15px;
+}
+header .right .inputContainer input::placeholder {
+  color: #b10000;
+  font-size: 15px;
+}
+header .right .inputContainer .searchIcon {
+  position: absolute;
+  font-size: 12px;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .right .cartShopping {
+  font-size: 25px;
+}
+header .right .cartShopping:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

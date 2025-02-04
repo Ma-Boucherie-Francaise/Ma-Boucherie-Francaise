@@ -47,9 +47,11 @@ function CenterDiv() {
 function RightDiv() {
   return (
     <div className="right">
-      <input type="search" />
-      <FontAwesomeIcon icon={faMagnifyingGlass} />
-      <FontAwesomeIcon icon={faCartShopping} />
+      <div className="inputContainer">
+        <input type="search" placeholder={"Recherche"} />
+        <FontAwesomeIcon icon={faMagnifyingGlass} className="searchIcon" />
+      </div>
+      <FontAwesomeIcon icon={faCartShopping} className="cartShopping" />
     </div>
   );
 }
