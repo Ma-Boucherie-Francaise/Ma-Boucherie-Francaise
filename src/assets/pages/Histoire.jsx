@@ -43,3 +43,7 @@ function FirstSection() {
     </section>
   );
 }
+
+function SecondSection() {
+  return <section className="SecondSection">Section 2</section>;
+}
