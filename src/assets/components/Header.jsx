@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header>
       <div className="links">
-        {links.map(({ src, link }, i) => {
+        {links.map(({ link, src }, i) => {
           return (
             <Link key={i} to={src}>
               {link}
