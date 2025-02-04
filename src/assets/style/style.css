@@ -49,6 +49,7 @@ header {
 }
 header .badge {
   width: 13vw;
+  max-width: 190px;
 }
 header .center {
   display: flex;
