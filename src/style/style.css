@@ -44,6 +44,10 @@ img {
   color: #ffffff;
 }
 
+.hidden {
+  overflow: hidden;
+}
+
 @font-face {
   font-family: "AwesomeSerif";
   src: url(/fonts/AwesomeSerif-BoldExtraTall.otf);
@@ -299,6 +303,7 @@ header .right .cartShopping:hover {
 
 #Produits {
   height: 100vh;
+  color: #b10000;
 }
 #Produits .pictoContainer {
   max-width: 1440px;
@@ -332,4 +337,18 @@ header .right .cartShopping:hover {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+#Produits .textsContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#Produits .textsContainer .text {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=style.css.map */

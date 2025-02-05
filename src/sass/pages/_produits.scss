@@ -1,5 +1,6 @@
 #Produits {
   height: 100vh;
+  color: $Red;
 
   .pictoContainer {
     max-width: 1440px;
@@ -32,6 +33,22 @@
           object-position: center;
         }
       }
+    }
+  }
+
+  .textsContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    .text {
+      text-align: center;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }
