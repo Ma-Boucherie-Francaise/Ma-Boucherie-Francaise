@@ -64,7 +64,7 @@ function Texts({ projectHovered }) {
       {ProduitsData.map(({ name, underName, sentence }, i) => {
         return (
           <m.div
-            initial="initial"
+            initial="hide"
             animate={projectHovered === i ? "show" : "hide"}
             key={i}
             className="text"
