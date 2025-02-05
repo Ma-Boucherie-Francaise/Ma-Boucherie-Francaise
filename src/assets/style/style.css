@@ -267,7 +267,7 @@ header .right .cartShopping:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 45%;
+  width: 35%;
 }
 #Histoire .SecondSection .cardsContainer .card:hover {
   cursor: pointer;
