@@ -297,7 +297,39 @@ header .right .cartShopping:hover {
   width: 100%;
 }
 
+#Produits {
+  height: 100vh;
+}
+#Produits .pictoContainer {
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+  padding: 0 5vw;
+}
 #Produits .pictoContainer .picto {
-  width: 25%;
-  background-color: black;
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+#Produits .pictoContainer .picto:hover {
+  cursor: pointer;
+}
+#Produits .pictoContainer .picto .image {
+  width: 100%;
+  height: 100%;
+}
+#Produits .pictoContainer .picto .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }/*# sourceMappingURL=style.css.map */

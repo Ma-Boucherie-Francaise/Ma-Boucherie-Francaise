@@ -10,7 +10,9 @@ export default function Produits() {
           {ProduitsData.map(({ picto, name }, i) => {
             return (
               <div key={i} className="picto">
-                <img src={picto} alt={`image ${name}`} />
+                <div className="image">
+                  <img src={picto} alt={`image ${name}`} />
+                </div>
               </div>
             );
           })}
