@@ -297,7 +297,7 @@ header .right .cartShopping:hover {
   width: 100%;
 }
 
-#Produits .picto {
+#Produits .pictoContainer .picto {
   width: 25%;
   background-color: black;
 }/*# sourceMappingURL=style.css.map */

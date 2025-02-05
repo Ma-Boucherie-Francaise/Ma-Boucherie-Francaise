@@ -6,13 +6,15 @@ export default function Produits() {
     <>
       <TitlePage title="Produits —" />
       <main id="Produits">
-        {ProduitsData.map(({ picto, name }, i) => {
-          return (
-            <div key={i} className="picto">
-              <img src={picto} alt={`image ${name}`} />
-            </div>
-          );
-        })}
+        <div className="pictoContainer">
+          {ProduitsData.map(({ picto, name }, i) => {
+            return (
+              <div key={i} className="picto">
+                <img src={picto} alt={`image ${name}`} />
+              </div>
+            );
+          })}
+        </div>
       </main>
     </>
   );
