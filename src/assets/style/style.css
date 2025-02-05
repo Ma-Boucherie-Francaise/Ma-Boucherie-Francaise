@@ -114,7 +114,7 @@ header .right .inputContainer input {
   border-radius: 20px;
   border: 1px solid #b10000;
   padding: 8px 10px 8px 30px;
-  width: 10vw;
+  width: 140px;
   caret-color: #b10000;
   color: #b10000;
 }
@@ -204,16 +204,16 @@ header .right .cartShopping:hover {
 #Histoire {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 #Histoire .FirstSection,
 #Histoire .SecondSection {
   padding: 20px 5vw;
+  max-width: 1440px;
 }
 #Histoire .FirstSection {
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
   height: 700px;
 }
 #Histoire .FirstSection .contentContainer {
@@ -229,7 +229,7 @@ header .right .cartShopping:hover {
   padding-left: 5vw;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  justify-content: space-between;
 }
 #Histoire .FirstSection .contentContainer .textsContainer .paragraph {
   display: flex;
@@ -243,4 +243,57 @@ header .right .cartShopping:hover {
 #Histoire .FirstSection .contentContainer .textsContainer .paragraph span,
 #Histoire .FirstSection .contentContainer .textsContainer .paragraph p {
   font-size: 16px;
+}
+#Histoire .SecondSection {
+  padding-top: 100px;
+}
+#Histoire .SecondSection .title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+#Histoire .SecondSection .title p {
+  font-size: 20px;
+}
+#Histoire .SecondSection .cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+}
+#Histoire .SecondSection .cardsContainer .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+#Histoire .SecondSection .cardsContainer .card:hover {
+  cursor: pointer;
+}
+#Histoire .SecondSection .cardsContainer .card:hover p {
+  opacity: 1;
+}
+#Histoire .SecondSection .cardsContainer .card p {
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  text-align: center;
+  padding: 0 10%;
+  transition: opacity 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+}
+#Histoire .SecondSection .cardsContainer .card .image {
+  width: 80%;
+}
+#Histoire .SecondSection .cardsContainer .card .image img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

@@ -61,11 +61,11 @@ function SecondSection() {
     },
     {
       image: PictoCircuit,
-      text: "LE RESPECT DU BIEN ÊTRE ANIMAL : l’élevage à taille humaine alimentation saine : Pour les bovins constituée d'herbe, pâturée ou en fourrage complétée avec des céréales. Pour les porcs, l'alimentation EST composée de céréales, oléoprotéagineux, vitamines et minéraux.des logements adapté ",
+      text: "LE RESPECT DU BIEN ÊTRE ANIMAL : l’élevage à taille humaine alimentation saine : Pour les bovins constituée d'herbe, pâturée ou en fourrage complétée avec des céréales. Pour les porcs, l'alimentation EST composée de céréales, oléoprotéagineux, vitamines et minéraux.des logements adapté.",
     },
     {
       image: PictoFraicheur,
-      text: "la mise en place d’information de traçabilité et information nutritionnelle claire, lisible et facile à comprendre pour tous.",
+      text: "La mise en place d’information de traçabilité et information nutritionnelle claire, lisible et facile à comprendre pour tous.",
     },
     {
       image: PictoSavoirFaire,
@@ -84,7 +84,9 @@ function SecondSection() {
         {cards.map(({ image, text }, i) => {
           return (
             <div key={i} className="card">
-              <img src={image} alt={`Picto ${i + 1}`} />
+              <div className="image">
+                <img src={image} alt={`Picto ${i + 1}`} />
+              </div>
               <p>{text}</p>
             </div>
           );
