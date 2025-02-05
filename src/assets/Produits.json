@@ -1,0 +1,44 @@
+[
+  {
+    "picto": "/PictoBoeuf.png",
+    "name": "Le boeuf",
+    "underName": "Fermier du maine",
+    "sentence": "découvrez mes différentes découpes"
+  },
+  {
+    "picto": "/PictoAgneau.png",
+    "name": "L'Agneau",
+    "underName": "Bleu du maine",
+    "sentence": "découvrez mes différentes découpes"
+  },
+  {
+    "picto": "/PictoVeau.png",
+    "name": "Le Veau",
+    "underName": "Fermier du Limousin",
+    "sentence": "découvrez mes différentes découpes"
+  },
+  {
+    "picto": "/PictoPorc.png",
+    "name": "Le Porc",
+    "underName": "Sud Ouest",
+    "sentence": "découvrez mes différentes découpes"
+  },
+  {
+    "picto": "/PictoVolaille.png",
+    "name": "La volaille",
+    "underName": "Sud Ouest-Landes",
+    "sentence": "découvrez mes différentes découpes"
+  },
+  {
+    "picto": "/PictoCharcuterie.png",
+    "name": "La charcuterie",
+    "underName": "Fabrication artisanale",
+    "sentence": "découvrez mes différentes découpes"
+  },
+  {
+    "picto": "/PictoEpicerie.png",
+    "name": "L'épicerie / Traiteur",
+    "underName": "Fabrication artisanale",
+    "sentence": "découvrez mes différentes découpes"
+  }
+]
