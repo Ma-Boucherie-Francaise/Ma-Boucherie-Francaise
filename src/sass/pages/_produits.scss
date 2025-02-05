@@ -17,12 +17,19 @@
       height: 300px;
       object-fit: cover;
       object-position: center;
+      transition: opacity 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+      will-change: opacity;
 
       &:hover {
         cursor: pointer;
       }
 
+      &:not(:hover) {
+        opacity: 0.5;
+      }
+
       .image {
+        pointer-events: none;
         width: 100%;
         height: 100%;
 
@@ -41,15 +48,27 @@
     top: 0;
     left: 0;
     pointer-events: none;
-
     width: 100%;
     height: 100%;
+
     .text {
       text-align: center;
       position: absolute;
       top: 60%;
       left: 50%;
       transform: translate(-50%, -50%);
+      white-space: nowrap;
+
+      h1 {
+        font-size: 100px;
+      }
+      p {
+        font-size: 30px;
+      }
+      span {
+        font-size: 15px;
+        display: block;
+      }
     }
   }
 }

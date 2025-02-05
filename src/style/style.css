@@ -322,11 +322,17 @@ header .right .cartShopping:hover {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  transition: opacity 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+  will-change: opacity;
 }
 #Produits .pictoContainer .picto:hover {
   cursor: pointer;
 }
+#Produits .pictoContainer .picto:not(:hover) {
+  opacity: 0.5;
+}
 #Produits .pictoContainer .picto .image {
+  pointer-events: none;
   width: 100%;
   height: 100%;
 }
@@ -352,4 +358,15 @@ header .right .cartShopping:hover {
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+#Produits .textsContainer .text h1 {
+  font-size: 100px;
+}
+#Produits .textsContainer .text p {
+  font-size: 30px;
+}
+#Produits .textsContainer .text span {
+  font-size: 15px;
+  display: block;
 }/*# sourceMappingURL=style.css.map */
