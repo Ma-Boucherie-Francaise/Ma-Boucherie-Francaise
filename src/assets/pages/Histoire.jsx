@@ -15,12 +15,16 @@ export default function Histoire() {
 function FirstSection() {
   const texts = [
     {
-      undertitle: "Un parcours ambitieux",
-      text: "Nous visons à célébrer la gastronomie française en proposant une large gamme de produits artisanaux de qualité exceptionnelle, tout en garantissant des prix accessibles. Nous combinons excellence, diversité, et savoir-faire artisanal avec une expérience d’achat en ligne fluide, rapide et sécurisée. Offrir une livraison directe de produits frais ou raffinés exige une logistique rigoureuse, tandis que la promesse d’une expérience gustative unique engage à dépasser les attentes des clients en mariant qualité, tradition et modernité.",
+      undertitle: "Description entreprise",
+      text: "Maboucheriefrançaise.com, votre boucherie traditionnelle vous propose de découvrir des viandes, charcuterie et fromage de pays en direct de l'élevage.",
     },
     {
-      undertitle: "Une idée novatrice",
-      text: "Nous réinventons la manière d’accéder à la gastronomie française en alliant tradition et modernité. En rendant des produits artisanaux et de qualité supérieure disponibles en ligne, en  démocratisant un savoir-faire culinaire souvent perçu comme élitiste. Nous répondons aux nouvelles attentes des consommateurs, en proposant une expérience digitale fluide et personnalisée, tout en intégrant des exigences de traçabilité, de fraîcheur et de durabilité. En outre, le modèle mêle la simplicité d’un panier en ligne à une offre gourmande et raffinée, livrée directement à domicile, ce qui redéfinit la notion de commerce alimentaire haut de gamme dans un contexte numérique.",
+      undertitle: "Histoire de la maison",
+      text: "Amoureuse des traditions et du savoir-faire français, la maison décide de vouloir rendre dynamique l'héritage artisanal légué en apprentissage. S’engageant a partagé les valeurs au cœur de la tradition bouchère française tout en permettant son accessibilité en garantissant la qualité de ses produits.",
+    },
+    {
+      undertitle: "Service proposé",
+      text: "Nous nous engageons à apporter tout le soin et la diligence nécessaire pour vous satisfaire. Pour chaque produit, la maison propose des options de découpe, de conditionnement et de grammage tout en garantissant une qualité de service conforme aux normes alimentaires.",
     },
   ];
 
