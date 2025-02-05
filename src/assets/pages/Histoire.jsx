@@ -57,7 +57,7 @@ function SecondSection() {
   const cards = [
     {
       image: PictoEleveurs,
-      text: "Nous garantissons la provenance de nos viandes uniquement française et nous fournissons la traçabilité de tous nos produits. (100% de nos produits sont porteurs des logos viande de France*)",
+      text: "Nous garantissons la provenance de nos viandes uniquement française et nous fournissons la traçabilité de tous nos produits. (100% de nos produits sont porteurs des logos viande de France)",
     },
     {
       image: PictoCircuit,
