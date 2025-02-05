@@ -19,6 +19,10 @@ h1 {
   font-size: 65px;
 }
 
+main {
+  padding: 170px 0 0;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -45,6 +49,10 @@ img {
   src: url(/fonts/AwesomeSerif-BoldExtraTall.otf);
 }
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 6;
+  background: #ffffff;
   color: #b10000;
   display: flex;
   justify-content: space-between;
@@ -196,6 +204,9 @@ header .right .cartShopping:hover {
 #Histoire {
   display: flex;
   justify-content: center;
+}
+#Histoire .FirstSection,
+#Histoire .SecondSection {
   padding: 20px 5vw;
 }
 #Histoire .FirstSection {

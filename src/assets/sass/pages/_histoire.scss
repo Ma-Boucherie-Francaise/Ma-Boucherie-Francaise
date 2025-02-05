@@ -1,7 +1,11 @@
 #Histoire {
   display: flex;
   justify-content: center;
-  padding: 20px 5vw;
+
+  .FirstSection,
+  .SecondSection {
+    padding: 20px 5vw;
+  }
 
   .FirstSection {
     display: flex;

@@ -1,4 +1,8 @@
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 6;
+  background: $White;
   color: $Red;
   display: flex;
   justify-content: space-between;
