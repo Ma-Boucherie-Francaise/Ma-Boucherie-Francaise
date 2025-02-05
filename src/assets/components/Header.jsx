@@ -21,7 +21,7 @@ function CenterDiv() {
   const links = [
     { link: "Accueil", src: "/" },
     { link: "Histoire", src: "/histoire" },
-    { link: "Produits", src: "/" },
+    { link: "Produits", src: "/produits" },
     { link: "Livraison", src: "/" },
     { link: "FAQ", src: "/" },
   ];
