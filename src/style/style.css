@@ -235,7 +235,6 @@ header .right .cartShopping:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  text-align: justify;
 }
 #Histoire .FirstSection .contentContainer .textsContainer .paragraph p {
   font-weight: 600;
@@ -296,4 +295,9 @@ header .right .cartShopping:hover {
 }
 #Histoire .SecondSection .cardsContainer .card .image img {
   width: 100%;
+}
+
+#Produits .picto {
+  width: 25%;
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */
