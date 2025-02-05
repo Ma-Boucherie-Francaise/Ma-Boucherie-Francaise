@@ -203,6 +203,7 @@ header .right .cartShopping:hover {
 
 #Histoire {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 #Histoire .FirstSection,
