@@ -42,7 +42,7 @@ img {
 
 @font-face {
   font-family: "AwesomeSerif";
-  src: url(/public/fonts/AwesomeSerif-BoldExtraTall.otf);
+  src: url(/fonts/AwesomeSerif-BoldExtraTall.otf);
 }
 header {
   color: #b10000;
