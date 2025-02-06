@@ -1,6 +1,7 @@
 import TitlePage from "../components/TitlePage";
 import ImageAccueil from "/ImageAccueil.jpg";
 import Pattern4Rouge from "/PatternRouge4.png";
+import DecoupeData from "../assets/DecoupeData.json";
 
 export default function Accueil() {
   return (
@@ -8,6 +9,7 @@ export default function Accueil() {
       <TitlePage title="" />
       <main id="Accueil">
         <FirstSection />
+        <SecondSection />
       </main>
     </>
   );
@@ -38,7 +40,18 @@ function SecondSection() {
   return (
     <section className="SecondSection">
       <h1>Nos Découpes</h1>
-      <div className="carrousel"></div>
+      <div className="carrousel">
+        {DecoupeData.map(({ image, name }, i) => {
+          return (
+            <div key={i} className="decoupe">
+              <div className="image">
+                <img src={image} alt={name} />
+                <p>{name}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 }
