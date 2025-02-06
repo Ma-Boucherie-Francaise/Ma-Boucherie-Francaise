@@ -7,6 +7,7 @@ import {
   faChevronRight,
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 export default function Accueil() {
   return (
@@ -42,22 +43,61 @@ function FirstSection() {
 }
 
 function SecondSection() {
+  const [curretImage, setCurrentImage] = useState(0);
+
+  const imageWidth = 450;
+
+  const imageGap = 10;
+
+  const imageOnScreen = 2;
+
+  const calculTransform = (-imageWidth - imageGap) * curretImage;
+
+  const IncrementImage = () => {
+    setCurrentImage(curretImage + 1);
+  };
+
+  const DerementImage = () => {
+    setCurrentImage(curretImage - 1);
+  };
+
   return (
     <section className="SecondSection">
       <div className="topSection">
         <h1>Nos Découpes</h1>
 
         <div className="arrowContainer">
-          <div className="arrowLeft">
+          <div
+            style={{
+              pointerEvents: curretImage == 0 ? "none" : "all",
+              opacity: curretImage == 0 ? 0.3 : 1,
+            }}
+            onClick={() => DerementImage()}
+            className="arrowLeft"
+          >
             <FontAwesomeIcon icon={faChevronLeft} />
           </div>
-          <div className="arrowRight">
+          <div
+            style={{
+              pointerEvents:
+                curretImage == DecoupeData.length - imageOnScreen
+                  ? "none"
+                  : "all",
+              opacity:
+                curretImage == DecoupeData.length - imageOnScreen ? 0.3 : 1,
+            }}
+            onClick={() => IncrementImage()}
+            className="arrowRight"
+          >
             <FontAwesomeIcon icon={faChevronRight} />
           </div>
         </div>
       </div>
       <div className="carrousel">
-        <div className="decoupesContainer">
+        <div
+          style={{ transform: `translateX(${calculTransform}px)` }}
+          className="decoupesContainer"
+        >
           {DecoupeData.map(({ image, name }, i) => {
             return (
               <div key={i} className="decoupe">
