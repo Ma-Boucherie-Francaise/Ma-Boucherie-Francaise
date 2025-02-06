@@ -1,7 +1,7 @@
 [
   {
     "picto": "/PictoBoeuf.png",
-    "name": "Le boeuf",
+    "name": "Le Boeuf",
     "underName": "Fermier du maine",
     "sentence": "découvrez mes différentes découpes",
     "href": "Leboeuf"
@@ -29,14 +29,14 @@
   },
   {
     "picto": "/PictoVolaille.png",
-    "name": "La volaille",
+    "name": "La Volaille",
     "underName": "Sud Ouest-Landes",
     "sentence": "découvrez mes différentes découpes",
     "href": "LaVolaille"
   },
   {
     "picto": "/PictoCharcuterie.png",
-    "name": "La charcuterie",
+    "name": "La Charcuterie",
     "underName": "Fabrication artisanale",
     "sentence": "découvrez mes différentes découpes",
     "href": "LaCharcuterie"
