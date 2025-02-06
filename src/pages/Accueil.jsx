@@ -33,3 +33,12 @@ function FirstSection() {
     </section>
   );
 }
+
+function SecondSection() {
+  return (
+    <section className="SecondSection">
+      <h1>Nos Découpes</h1>
+      <div className="carrousel"></div>
+    </section>
+  );
+}
