@@ -11,7 +11,7 @@ export default function Produit() {
 
   return (
     <>
-      <TitlePage title={`${filterCategorys.name}  — `} />
+      <TitlePage title={`${filterCategorys.name}  —`} />
       <main id="Produit">
         <h1>{filterCategorys.name}</h1>
       </main>
