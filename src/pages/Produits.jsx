@@ -2,6 +2,7 @@ import { useState } from "react";
 import ProduitsData from "../assets/ProduitsData.json";
 import TitlePage from "../components/TitlePage";
 import { motion as m } from "motion/react";
+import { Link } from "react-router-dom";
 
 export default function Produits() {
   const [projectHovered, setProjectHovered] = useState();
@@ -28,9 +29,10 @@ function Pictograms({ setProjectHovered }) {
 
   return (
     <div className="pictoContainer">
-      {ProduitsData.map(({ picto, name }, i) => {
+      {ProduitsData.map(({ picto, name, href }, i) => {
         return (
-          <div
+          <Link
+            to={href}
             key={i}
             data-id={i}
             onMouseEnter={(e) => MouseEnter(e)}
@@ -40,7 +42,7 @@ function Pictograms({ setProjectHovered }) {
             <div className="image">
               <img src={picto} alt={`image ${name}`} />
             </div>
-          </div>
+          </Link>
         );
       })}
     </div>
