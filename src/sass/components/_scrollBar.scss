@@ -1,0 +1,14 @@
+.ScrollBarContainer {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+
+  .scrollBar {
+    width: 100%;
+    height: 100%;
+    background-color: $Red;
+    transform-origin: left;
+  }
+}

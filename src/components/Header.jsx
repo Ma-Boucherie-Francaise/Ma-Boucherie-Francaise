@@ -6,6 +6,7 @@ import {
   faMagnifyingGlass,
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
+import ScrollBar from "./ScrollBar";
 
 export default function Header() {
   return (
@@ -13,6 +14,7 @@ export default function Header() {
       <img className="badge" src={BadgeBR} alt="Image Badge" />
       <CenterDiv />
       <RightDiv />
+      <ScrollBar />
     </header>
   );
 }
