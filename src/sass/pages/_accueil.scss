@@ -65,4 +65,20 @@
       }
     }
   }
+
+  .SecondSection {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 5vw;
+
+    .carrousel {
+      .decoupe {
+        width: fit-content;
+        .image {
+          width: 450px;
+          aspect-ratio: 1/1;
+        }
+      }
+    }
+  }
 }

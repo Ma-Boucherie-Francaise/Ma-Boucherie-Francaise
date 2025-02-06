@@ -222,6 +222,19 @@ header .right .cartShopping:hover {
   height: 53px;
   width: 370px;
 }
+#Accueil .SecondSection {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 5vw;
+}
+#Accueil .SecondSection .carrousel .decoupe {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#Accueil .SecondSection .carrousel .decoupe .image {
+  width: 450px;
+  aspect-ratio: 1/1;
+}
 
 #Histoire {
   display: flex;
