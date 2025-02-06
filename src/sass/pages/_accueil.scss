@@ -1,4 +1,6 @@
 #Accueil {
+  color: $Red;
+
   .FirstSection {
     position: relative;
     height: 81vh;
@@ -69,14 +71,68 @@
   .SecondSection {
     max-width: 1440px;
     margin: auto;
-    padding: 0 5vw;
+    padding: 100px 0 100px 5vw;
+    // margin: 0 5v/w;
+    overflow: hidden;
+
+    .topSection {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .arrowContainer {
+        padding: 0 5vw 0 0;
+        display: flex;
+        gap: 10px;
+
+        .arrowLeft,
+        .arrowRight {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 100%;
+          width: 40px;
+          aspect-ratio: 1/1;
+          border: 2px solid $Red;
+          transition: 0.4s;
+
+          &:hover {
+            cursor: pointer;
+
+            background: $Red;
+
+            svg {
+              color: $White;
+            }
+          }
+        }
+      }
+    }
 
     .carrousel {
-      .decoupe {
-        width: fit-content;
-        .image {
-          width: 450px;
-          aspect-ratio: 1/1;
+      margin-top: 20px;
+
+      .decoupesContainer {
+        display: flex;
+        gap: 10px;
+
+        .decoupe {
+          .image {
+            width: 450px;
+            aspect-ratio: 1/1;
+            overflow: hidden;
+            border-radius: 20px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+          p {
+            padding: 20px 0 0;
+            text-align: center;
+          }
         }
       }
     }

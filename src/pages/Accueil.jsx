@@ -2,6 +2,11 @@ import TitlePage from "../components/TitlePage";
 import ImageAccueil from "/ImageAccueil.jpg";
 import Pattern4Rouge from "/PatternRouge4.png";
 import DecoupeData from "../assets/DecoupeData.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronRight,
+  faChevronLeft,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Accueil() {
   return (
@@ -39,18 +44,31 @@ function FirstSection() {
 function SecondSection() {
   return (
     <section className="SecondSection">
-      <h1>Nos Découpes</h1>
+      <div className="topSection">
+        <h1>Nos Découpes</h1>
+
+        <div className="arrowContainer">
+          <div className="arrowLeft">
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </div>
+          <div className="arrowRight">
+            <FontAwesomeIcon icon={faChevronRight} />
+          </div>
+        </div>
+      </div>
       <div className="carrousel">
-        {DecoupeData.map(({ image, name }, i) => {
-          return (
-            <div key={i} className="decoupe">
-              <div className="image">
-                <img src={image} alt={name} />
+        <div className="decoupesContainer">
+          {DecoupeData.map(({ image, name }, i) => {
+            return (
+              <div key={i} className="decoupe">
+                <div className="image">
+                  <img src={image} alt={name} />
+                </div>
                 <p>{name}</p>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </section>
   );

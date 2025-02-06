@@ -162,6 +162,9 @@ header .right .cartShopping:hover {
   transform-origin: left;
 }
 
+#Accueil {
+  color: #b10000;
+}
 #Accueil .FirstSection {
   position: relative;
   height: 81vh;
@@ -225,15 +228,63 @@ header .right .cartShopping:hover {
 #Accueil .SecondSection {
   max-width: 1440px;
   margin: auto;
-  padding: 0 5vw;
+  padding: 100px 0 100px 5vw;
+  overflow: hidden;
 }
-#Accueil .SecondSection .carrousel .decoupe {
-  width: -moz-fit-content;
-  width: fit-content;
+#Accueil .SecondSection .topSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-#Accueil .SecondSection .carrousel .decoupe .image {
+#Accueil .SecondSection .topSection .arrowContainer {
+  padding: 0 5vw 0 0;
+  display: flex;
+  gap: 10px;
+}
+#Accueil .SecondSection .topSection .arrowContainer .arrowLeft,
+#Accueil .SecondSection .topSection .arrowContainer .arrowRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 40px;
+  aspect-ratio: 1/1;
+  border: 2px solid #b10000;
+  transition: 0.4s;
+}
+#Accueil .SecondSection .topSection .arrowContainer .arrowLeft:hover,
+#Accueil .SecondSection .topSection .arrowContainer .arrowRight:hover {
+  cursor: pointer;
+  background: #b10000;
+}
+#Accueil .SecondSection .topSection .arrowContainer .arrowLeft:hover svg,
+#Accueil .SecondSection .topSection .arrowContainer .arrowRight:hover svg {
+  color: #ffffff;
+}
+#Accueil .SecondSection .carrousel {
+  margin-top: 20px;
+}
+#Accueil .SecondSection .carrousel .decoupesContainer {
+  display: flex;
+  gap: 10px;
+}
+#Accueil .SecondSection .carrousel .decoupesContainer .decoupe .image {
   width: 450px;
   aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 20px;
+}
+#Accueil .SecondSection .carrousel .decoupesContainer .decoupe .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+#Accueil .SecondSection .carrousel .decoupesContainer .decoupe p {
+  padding: 20px 0 0;
+  text-align: center;
 }
 
 #Histoire {
