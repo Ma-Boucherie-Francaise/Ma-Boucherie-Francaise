@@ -2,12 +2,14 @@ import TitlePage from "../components/TitlePage";
 import ImageAccueil from "/ImageAccueil.jpg";
 import Pattern4Rouge from "/PatternRouge4.png";
 import DecoupeData from "../assets/DecoupeData.json";
+import BlockData from "../assets/BlockData.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronRight,
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Accueil() {
   return (
@@ -16,6 +18,7 @@ export default function Accueil() {
       <main id="Accueil">
         <FirstSection />
         <SecondSection />
+        <ThirdSection />
       </main>
     </>
   );
@@ -102,6 +105,26 @@ function SecondSection() {
             );
           })}
         </div>
+      </div>
+    </section>
+  );
+}
+
+function ThirdSection() {
+  return (
+    <section className="ThirdSection">
+      <div className="blocksContainer">
+        {BlockData.map(({ name, paragraph, href, button }, i) => {
+          return (
+            <div key={i} className="block">
+              <h2>{name}</h2>
+              <p>{paragraph}</p>
+              <Link className="btn" to={href}>
+                {button}
+              </Link>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

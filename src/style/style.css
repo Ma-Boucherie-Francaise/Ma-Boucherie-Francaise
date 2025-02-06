@@ -165,6 +165,11 @@ header .right .cartShopping:hover {
 #Accueil {
   color: #b10000;
 }
+#Accueil .SecondSection,
+#Accueil .ThirdSection {
+  max-width: 1440px;
+  margin: auto;
+}
 #Accueil .FirstSection {
   position: relative;
   height: 81vh;
@@ -226,8 +231,6 @@ header .right .cartShopping:hover {
   width: 370px;
 }
 #Accueil .SecondSection {
-  max-width: 1440px;
-  margin: auto;
   padding: 100px 0 100px 5vw;
   overflow: hidden;
 }
@@ -288,6 +291,46 @@ header .right .cartShopping:hover {
 #Accueil .SecondSection .carrousel .decoupesContainer .decoupe p {
   padding: 20px 0 0;
   text-align: center;
+}
+#Accueil .ThirdSection {
+  padding: 50px 5vw;
+  text-align: center;
+}
+#Accueil .ThirdSection h2 {
+  font-family: "AwesomeSerif";
+  font-size: 50px;
+}
+#Accueil .ThirdSection p {
+  font-size: 20px;
+}
+#Accueil .ThirdSection .blocksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#Accueil .ThirdSection .blocksContainer .block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  border: 2px solid #b10000;
+  border-radius: 10px;
+  padding: 70px 20%;
+}
+#Accueil .ThirdSection .blocksContainer .block .btn {
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 2px solid #b10000;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 0;
+  width: 50%;
+  border-radius: 25px;
+  transition: 0.4s;
+}
+#Accueil .ThirdSection .blocksContainer .block .btn:hover {
+  background: #b10000;
+  color: #ffffff;
 }
 
 #Histoire {

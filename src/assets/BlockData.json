@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Ma boucherie description :",
+    "paragraph": "Artisan boucher passionné, Maboucheriefrancaise vous propose des viandes de qualité, sélectionnées avec soin et découpées selon vos envies.",
+    "href": "/histoire",
+    "button": "Histoire"
+  },
+  {
+    "name": "Livraison & Click and collect",
+    "paragraph": "Commandez en ligne votre découpe personnalisée et récupérez-la en boutique grâce au click and collect, ou optez pour la livraison à domicile.",
+    "href": "/",
+    "button": "Livraison"
+  }
+]
