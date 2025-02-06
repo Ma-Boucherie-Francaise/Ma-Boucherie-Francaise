@@ -267,6 +267,8 @@ header .right .cartShopping:hover {
 #Accueil .SecondSection .carrousel .decoupesContainer {
   display: flex;
   gap: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
   transition: transform 0.65s cubic-bezier(0.65, 0, 0.35, 1);
 }
 #Accueil .SecondSection .carrousel .decoupesContainer .decoupe .image {

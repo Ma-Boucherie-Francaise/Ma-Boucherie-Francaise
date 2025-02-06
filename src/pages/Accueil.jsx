@@ -45,13 +45,7 @@ function FirstSection() {
 function SecondSection() {
   const [curretImage, setCurrentImage] = useState(0);
 
-  const imageWidth = 450;
-
-  const imageGap = 10;
-
-  const imageOnScreen = 2;
-
-  const calculTransform = (-imageWidth - imageGap) * curretImage;
+  const calculTransform = 100 / DecoupeData.length;
 
   const IncrementImage = () => {
     setCurrentImage(curretImage + 1);
@@ -80,11 +74,8 @@ function SecondSection() {
           <div
             style={{
               pointerEvents:
-                curretImage == DecoupeData.length - imageOnScreen
-                  ? "none"
-                  : "all",
-              opacity:
-                curretImage == DecoupeData.length - imageOnScreen ? 0.3 : 1,
+                curretImage == DecoupeData.length - 1 ? "none" : "all",
+              opacity: curretImage == DecoupeData.length - 1 ? 0.3 : 1,
             }}
             onClick={() => IncrementImage()}
             className="arrowRight"
@@ -95,7 +86,9 @@ function SecondSection() {
       </div>
       <div className="carrousel">
         <div
-          style={{ transform: `translateX(${calculTransform}px)` }}
+          style={{
+            transform: `translateX(-${calculTransform * curretImage}%)`,
+          }}
           className="decoupesContainer"
         >
           {DecoupeData.map(({ image, name }, i) => {
