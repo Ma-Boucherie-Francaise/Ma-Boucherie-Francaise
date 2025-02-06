@@ -296,6 +296,10 @@ header .right .cartShopping:hover {
   padding: 50px 5vw;
   text-align: center;
 }
+#Accueil .ThirdSection .title {
+  margin-bottom: 100px;
+  padding: 0 2vw;
+}
 #Accueil .ThirdSection h2 {
   font-family: "AwesomeSerif";
   font-size: 50px;

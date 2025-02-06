@@ -34,9 +34,9 @@ function FirstSection() {
         <h1>Le goût de l'excellence,</h1>
         <p>directement chez vous.</p>
       </div>
-      <a href="#" className="button">
+      <Link to="/produits" className="button">
         Découvrez nos viandes
-      </a>
+      </Link>
       <div className="patternContainer">
         <img src={Pattern4Rouge} alt="patternRouge" />
         <img src={Pattern4Rouge} alt="patternRouge" />
@@ -113,6 +113,12 @@ function SecondSection() {
 function ThirdSection() {
   return (
     <section className="ThirdSection">
+      <div className="title">
+        <h1>
+          Tradition, savoir-faire et praticité : <br /> votre boucherie comme
+          vous l’aimez !
+        </h1>
+      </div>
       <div className="blocksContainer">
         {BlockData.map(({ name, paragraph, href, button }, i) => {
           return (
