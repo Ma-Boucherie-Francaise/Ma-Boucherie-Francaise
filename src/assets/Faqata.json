@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Commandes",
+    "questions": [
+      {
+        "question": "Comment passer une commande sur votre site ?",
+        "answer": "Il vous suffit de sélectionner vos produits, de les ajouter à votre panier et de finaliser votre commande en suivant les étapes indiquées."
+      },
+      {
+        "question": " Puis-je modifier ou annuler ma commande après validation ?",
+        "answer": "Oui, vous pouvez modifier ou annuler votre commande jusqu’à 24 heures avant la préparation, en contactant notre service client."
+      }
+    ]
+  },
+  {
+    "title": "Produits",
+    "questions": [
+      {
+        "question": "D’où proviennent vos viandes ?",
+        "answer": "Nos viandes proviennent pour la volaille des Landes, le bœuf Limousin,l’Angus d’Ecosse, le porc (…), le Veau (….) avec un engagement pour des produits locaux et de qualité."
+      },
+      {
+        "question": "Proposez-vous des produits certifiés ou labellisés ?",
+        "answer": "Oui, certains de nos produits sont certifiés :bio, Label Rouge, AOP, AOC, et ces informations sont indiquées sur chaque fiche produit."
+      }
+    ]
+  },
+  {
+    "title": "Livraison",
+    "questions": [
+      {
+        "question": "Quels sont vos délais de livraison ?",
+        "answer": "Les délais de livraison varient entre [précisez, ex. : 24 et 48 heures selon votre localisation."
+      },
+      {
+        "question": "Comment garantissez-vous la fraîcheur des produits lors de la livraison ?",
+        "answer": "Nos produits sont emballés sous vide et transportés dans des emballages réfrigérés pour garantir leur fraîcheur jusqu’à la livraison."
+      }
+    ]
+  },
+  {
+    "title": "Click and Collect",
+    "questions": [
+      {
+        "question": "Proposez-vous le retrait en magasin ?",
+        "answer": "Oui, avec notre service click and collect, vous pouvez commander en ligne et récupérer votre commande directement à notre boutique au 103 Boulevard Jourdan, 75014 Paris."
+      }
+    ]
+  },
+  {
+    "title": "Paiement",
+    "questions": [
+      {
+        "question": "Quels sont les moyens de paiement acceptés ?",
+        "answer": "Nous acceptons les paiements par carte bancaire, PayPal et autres moyens éventuels : ticket restaurant, swile."
+      },
+      {
+        "question": "Le paiement en ligne est-il sécurisé ?",
+        "answer": "Oui, toutes les transactions sont protégées grâce à un système de cryptage SSL garantissant la sécurité de vos données."
+      }
+    ]
+  },
+  {
+    "title": "Questions générales",
+    "questions": [
+      {
+        "question": "Puis-je passer commande sans créer de compte ?",
+        "answer": "Oui, il est possible de commander en tant qu’invité, mais nous vous recommandons de créer un compte pour suivre vos commandes plus facilement."
+      },
+      {
+        "question": "Proposez-vous des conseils de préparation pour vos viandes ?",
+        "answer": "Oui, chaque fiche produit contient des recommandations de cuisson. Vous pouvez également consulter nos recettes et astuces sur notre blog."
+      },
+      {
+        "question": " Avez-vous un service client pour répondre à mes questions ?",
+        "answer": "Oui, notre service client est disponible [précisez horaires et moyens de contact, ex. : par téléphone, e-mail ou chat."
+      }
+    ]
+  }
+]
