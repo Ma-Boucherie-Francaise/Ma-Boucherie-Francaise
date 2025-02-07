@@ -47,6 +47,10 @@
           border: 1px solid $Red;
           background: none;
 
+          &:hover {
+            cursor: pointer;
+          }
+
           &,
           &::before,
           &::after {
@@ -74,8 +78,10 @@
             border-radius: 10px;
           }
         }
-        .answer {
-        }
+      }
+
+      .answer {
+        padding: 20px 40px 20px 20px;
       }
     }
   }

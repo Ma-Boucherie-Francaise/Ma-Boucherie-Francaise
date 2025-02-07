@@ -3,7 +3,8 @@ import TitlePage from "../components/TitlePage";
 import FaqData from "../assets/Faqata.json";
 
 export default function FAQ() {
-  const [clicked, setClicked] = useState();
+  const [clikedBlock, setClikedBlock] = useState();
+  const [clickedQuestion, setClickedQuestion] = useState();
 
   return (
     <>
@@ -20,11 +21,10 @@ export default function FAQ() {
                     <div className="question">
                       <p>{question}</p> <button />
                     </div>
-                    {clicked === i && (
-                      <div className="answer">
-                        <p>{answer}</p>
-                      </div>
-                    )}
+
+                    <div className="answer">
+                      <p>{answer}</p>
+                    </div>
                   </div>
                 );
               })}
