@@ -89,7 +89,7 @@ function SecondSection() {
     animate: (i) => ({
       opacity: 1,
       y: 0,
-      transition: { duration: 0.3, delay: 0.05 * i, ease: easeInOutCubic },
+      transition: { duration: 0.4, delay: 0.05 * i, ease: easeInOutCubic },
     }),
     exit: {
       opacity: 0,
