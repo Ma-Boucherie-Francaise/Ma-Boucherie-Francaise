@@ -79,10 +79,14 @@ header .center {
 }
 header .center .image {
   height: 100px;
+  width: 180%;
   pointer-events: none;
 }
 header .center .image img {
-  transform: scale(4);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 header .center .links {
   display: flex;
