@@ -5,6 +5,7 @@ import Histoire from "./pages/Histoire";
 import Produits from "./pages/Produits";
 import { useEffect } from "react";
 import Produit from "./pages/Produit";
+import FAQ from "./pages/FAQ";
 
 export default function App() {
   const { pathname } = useLocation();
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/histoire" element={<Histoire />} />
         <Route path="/produits" element={<Produits />} />
         <Route path="/produits/:categorie" element={<Produit />} />
+        <Route path="/faq" element={<FAQ />} />
       </Routes>
     </>
   );

@@ -25,7 +25,7 @@ function CenterDiv() {
     { link: "Histoire", src: "/histoire" },
     { link: "Produits", src: "/produits" },
     { link: "Livraison", src: "/" },
-    { link: "FAQ", src: "/" },
+    { link: "FAQ", src: "/faq" },
   ];
 
   return (
