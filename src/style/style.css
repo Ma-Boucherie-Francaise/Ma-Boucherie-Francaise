@@ -369,7 +369,7 @@ header .right .cartShopping:hover {
   padding-left: 5vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 30px;
 }
 #Histoire .FirstSection .contentContainer .textsContainer .paragraph {
   display: flex;
