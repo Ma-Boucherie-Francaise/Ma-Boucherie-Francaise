@@ -369,6 +369,70 @@ header .right .cartShopping:hover {
   color: #ffffff;
 }
 
+#FAQ {
+  color: #b10000;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 170px 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#FAQ h1 {
+  padding: 20px 0 0;
+  text-transform: uppercase;
+}
+#FAQ .faqBlockContainer {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+#FAQ .faqBlockContainer h2 {
+  padding-bottom: 20px;
+}
+#FAQ .faqBlockContainer .questionContainer .question {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+#FAQ .faqBlockContainer .questionContainer .question:hover {
+  cursor: pointer;
+}
+#FAQ .faqBlockContainer .questionContainer .question:hover button {
+  background: #b10000;
+}
+#FAQ .faqBlockContainer .questionContainer .question:hover button::after, #FAQ .faqBlockContainer .questionContainer .question:hover button::before {
+  background: #ffffff;
+}
+#FAQ .faqBlockContainer .questionContainer .question button {
+  position: relative;
+  width: 32px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  border: 1px solid #b10000;
+  background: none;
+}
+#FAQ .faqBlockContainer .questionContainer .question button, #FAQ .faqBlockContainer .questionContainer .question button::before, #FAQ .faqBlockContainer .questionContainer .question button::after {
+  transition: 0.25s cubic-bezier(0.65, 0, 0.35, 1);
+}
+#FAQ .faqBlockContainer .questionContainer .question button::after, #FAQ .faqBlockContainer .questionContainer .question button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #b10000;
+}
+#FAQ .faqBlockContainer .questionContainer .question button::before {
+  width: 40%;
+  height: 2px;
+  border-radius: 10px;
+}
+#FAQ .faqBlockContainer .questionContainer .question button::after {
+  height: 40%;
+  width: 2px;
+  border-radius: 10px;
+}
 #Histoire {
   display: flex;
   flex-direction: column;
