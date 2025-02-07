@@ -389,6 +389,7 @@ header .right .cartShopping:hover {
 }
 #FAQ .faqBlockContainer h2 {
   padding-bottom: 20px;
+  font-weight: 500;
 }
 #FAQ .faqBlockContainer .questionContainer .question {
   display: flex;
