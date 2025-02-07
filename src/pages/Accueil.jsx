@@ -84,7 +84,7 @@ function SecondSection() {
   const animeThumbnailsImage = {
     initial: {
       opacity: 0,
-      y: 10,
+      y: 15,
     },
     animate: (i) => ({
       opacity: 1,
