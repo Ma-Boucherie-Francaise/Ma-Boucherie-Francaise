@@ -279,10 +279,14 @@ header .right .cartShopping:hover {
   transition: transform 0.65s cubic-bezier(0.65, 0, 0.35, 1);
 }
 #Accueil .SecondSection .carrousel .decoupesContainer .decoupe .image {
+  position: relative;
   width: 450px;
   aspect-ratio: 1/1;
   overflow: hidden;
   border-radius: 20px;
+}
+#Accueil .SecondSection .carrousel .decoupesContainer .decoupe .image:hover {
+  cursor: pointer;
 }
 #Accueil .SecondSection .carrousel .decoupesContainer .decoupe .image img {
   width: 100%;
@@ -291,6 +295,30 @@ header .right .cartShopping:hover {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+#Accueil .SecondSection .carrousel .decoupesContainer .decoupe .image .thumbnailsContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.347);
+  transition: opacity 0.4s;
+}
+#Accueil .SecondSection .carrousel .decoupesContainer .decoupe .image .thumbnailsContainer .imagesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+#Accueil .SecondSection .carrousel .decoupesContainer .decoupe .image .thumbnailsContainer .imagesContainer img {
+  width: 40%;
+  height: 40%;
+  border-radius: 10px;
 }
 #Accueil .SecondSection .carrousel .decoupesContainer .decoupe p {
   padding: 20px 0 0;

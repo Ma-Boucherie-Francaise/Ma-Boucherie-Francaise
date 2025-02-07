@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { AnimatePresence, motion as m } from "motion/react";
 
 export default function Accueil() {
   return (
@@ -58,6 +59,45 @@ function SecondSection() {
     setCurrentImage(curretImage - 1);
   };
 
+  const [hovered, setHovered] = useState();
+
+  const ResetHovered = () => {
+    setHovered();
+  };
+
+  const easeInOutCubic = [0.65, 0, 0.35, 1];
+
+  const animeThumbnailsSection = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: { duration: 0.3, ease: "linear" },
+    },
+    exit: {
+      opacity: 0,
+      transition: { duration: 0.3, ease: easeInOutCubic },
+    },
+  };
+
+  const animeThumbnailsImage = {
+    initial: {
+      opacity: 0,
+      y: 10,
+    },
+    animate: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.3, delay: 0.05 * i, ease: easeInOutCubic },
+    }),
+    exit: {
+      opacity: 0,
+      y: 0,
+      transition: { duration: 0.3, ease: easeInOutCubic },
+    },
+  };
+
   return (
     <section className="SecondSection">
       <div className="topSection">
@@ -94,11 +134,41 @@ function SecondSection() {
           }}
           className="decoupesContainer"
         >
-          {DecoupeData.map(({ image, name }, i) => {
+          {DecoupeData.map(({ image, name, thumbnails }, i) => {
             return (
-              <div key={i} className="decoupe">
+              <div
+                key={i}
+                className="decoupe"
+                onMouseEnter={() => setHovered(i)}
+                onMouseLeave={() => ResetHovered()}
+              >
                 <div className="image">
                   <img src={image} alt={name} />
+                  <AnimatePresence>
+                    {hovered === i && (
+                      <m.div
+                        initial="initial"
+                        animate="animate"
+                        exit="exit"
+                        variants={animeThumbnailsSection}
+                        className="thumbnailsContainer"
+                      >
+                        <div className="imagesContainer">
+                          {thumbnails.map((thumbnail, i) => {
+                            return (
+                              <m.img
+                                custom={i}
+                                variants={animeThumbnailsImage}
+                                key={i}
+                                src={thumbnail}
+                                alt={`image ${i + 1}`}
+                              />
+                            );
+                          })}
+                        </div>
+                      </m.div>
+                    )}
+                  </AnimatePresence>
                 </div>
                 <p>{name}</p>
               </div>

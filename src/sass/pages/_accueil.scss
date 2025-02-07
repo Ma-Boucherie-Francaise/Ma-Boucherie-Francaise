@@ -124,17 +124,49 @@
 
         .decoupe {
           .image {
+            position: relative;
             width: 450px;
             aspect-ratio: 1/1;
             overflow: hidden;
             border-radius: 20px;
+            &:hover {
+              cursor: pointer;
+            }
+
             img {
               width: 100%;
               height: 100%;
               object-fit: cover;
               object-position: center;
             }
+
+            .thumbnailsContainer {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background: rgba(0, 0, 0, 0.347);
+              transition: opacity 0.4s;
+
+              .imagesContainer {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                img {
+                  width: 40%;
+                  height: 40%;
+                  border-radius: 10px;
+                }
+              }
+            }
           }
+
           p {
             padding: 20px 0 0;
             text-align: center;
