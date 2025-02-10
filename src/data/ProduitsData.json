@@ -4,48 +4,48 @@
     "name": "Le Boeuf",
     "underName": "Fermier du maine",
     "sentence": "découvrez mes différentes découpes",
-    "href": "produits/Leboeuf"
+    "href": "nos-produits/Leboeuf"
   },
   {
     "picto": "/PictoAgneau.png",
     "name": "L'Agneau",
     "underName": "Bleu du maine",
     "sentence": "découvrez mes différentes découpes",
-    "href": "produits/Lagneau"
+    "href": "nos-produits/Lagneau"
   },
   {
     "picto": "/PictoVeau.png",
     "name": "Le Veau",
     "underName": "Fermier du Limousin",
     "sentence": "découvrez mes différentes découpes",
-    "href": "produits/LeVeau"
+    "href": "nos-produits/LeVeau"
   },
   {
     "picto": "/PictoPorc.png",
     "name": "Le Porc",
     "underName": "Sud Ouest",
     "sentence": "découvrez mes différentes découpes",
-    "href": "produits/LePorc"
+    "href": "nos-produits/LePorc"
   },
   {
     "picto": "/PictoVolaille.png",
     "name": "La Volaille",
     "underName": "Sud Ouest-Landes",
     "sentence": "découvrez mes différentes découpes",
-    "href": "produits/LaVolaille"
+    "href": "nos-produits/LaVolaille"
   },
   {
     "picto": "/PictoCharcuterie.png",
     "name": "La Charcuterie",
     "underName": "Fabrication artisanale",
     "sentence": "découvrez mes différentes découpes",
-    "href": "produits/LaCharcuterie"
+    "href": "nos-produits/LaCharcuterie"
   },
   {
     "picto": "/PictoEpicerie.png",
     "name": "L'épicerie / Traiteur",
     "underName": "Fabrication artisanale",
     "sentence": "découvrez mes différentes découpes",
-    "href": "produits/LepicerieTraiteur"
+    "href": "nos-produits/LepicerieTraiteur"
   }
 ]
