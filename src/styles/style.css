@@ -353,6 +353,11 @@ header .right .cartShopping:hover {
   border-radius: 10px;
   padding: 70px 20%;
 }
+#Accueil .ThirdSection .blocksContainer .block .btns-container {
+  display: flex;
+  gap: 36px;
+  width: 100%;
+}
 #Accueil .ThirdSection .blocksContainer .block .btn {
   font-size: 20px;
   text-transform: uppercase;

@@ -16,9 +16,19 @@ const ShippingSection = () => {
             <div key={i} className="block">
               <h2>{name}</h2>
               <p>{paragraph}</p>
-              <Link className="btn" href={href}>
-                {button}
-              </Link>
+              {typeof button !== "string" ? (
+                <div className="btns-container">
+                  {button.map(({ name, btnHref }, index) => (
+                    <Link key={index} className="btn" href={btnHref}>
+                      {name}
+                    </Link>
+                  ))}
+                </div>
+              ) : (
+                <Link className="btn" href={href}>
+                  {button}
+                </Link>
+              )}
             </div>
           );
         })}

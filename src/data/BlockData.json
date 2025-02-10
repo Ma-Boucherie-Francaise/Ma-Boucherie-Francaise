@@ -8,7 +8,7 @@
   {
     "name": "Livraison & Click and collect",
     "paragraph": "Commandez en ligne votre découpe personnalisée et récupérez-la en boutique grâce au click and collect, ou optez pour la livraison à domicile.",
-    "href": "/",
-    "button": "Livraison"
+    "href": "",
+    "button": [{"name": "Livraison", "btnHref": "/" }, {"name": "Click & Collect", "btnHref": "/" }]
   }
 ]
