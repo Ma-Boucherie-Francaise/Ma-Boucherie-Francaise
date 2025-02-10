@@ -1,0 +1,22 @@
+.not-found{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  h2 {    
+    font-family: "AwesomeSerif";
+    font-size: 64px;
+    color: $Red;      
+  }
+  .infos {
+    text-align: center;
+    p {
+      margin-bottom: 8px;
+    }
+    .return-link {
+      text-decoration: underline;
+    }
+  }
+}

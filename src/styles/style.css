@@ -608,4 +608,27 @@ header .right .cartShopping:hover {
 #Produits .textsContainer .text span {
   font-size: 15px;
   display: block;
+}
+
+.not-found {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.not-found h2 {
+  font-family: "AwesomeSerif";
+  font-size: 64px;
+  color: #b10000;
+}
+.not-found .infos {
+  text-align: center;
+}
+.not-found .infos p {
+  margin-bottom: 8px;
+}
+.not-found .infos .return-link {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

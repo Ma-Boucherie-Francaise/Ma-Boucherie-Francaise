@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
-import BadgeBR from "/BadgeBR.png";
-import MBFLogoRouge from "/MBFLogoRouge.png";
+import Link from "next/link";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMagnifyingGlass,
@@ -11,32 +10,43 @@ import ScrollBar from "./ScrollBar";
 export default function Header() {
   return (
     <header>
-      <img className="badge" src={BadgeBR} alt="Image Badge" />
-      <CenterDiv />
+      <Image
+        className="badge"
+        src={"/BadgeBR.png"}
+        alt="Logo Ma Boucherie Française"
+        width={813}
+        height={508}
+      />
+      <Navigation />
       <RightDiv />
       <ScrollBar />
     </header>
   );
 }
 
-function CenterDiv() {
+function Navigation() {
   const links = [
     { link: "Accueil", src: "/" },
-    { link: "Histoire", src: "/histoire" },
-    { link: "Produits", src: "/produits" },
+    { link: "Histoire", src: "/notre-histoire" },
+    { link: "Produits", src: "/nos-produits" },
     { link: "Livraison", src: "/" },
-    { link: "FAQ", src: "/faq" },
+    { link: "FAQ", src: "/foire-aux-questions" },
   ];
 
   return (
     <div className="center">
       <div className="image">
-        <img src={MBFLogoRouge} alt="Logo MBF" />
+        <Image
+          src={"/MBFLogoRouge.png"}
+          alt="Logo MBF"
+          width={8000}
+          height={4500}
+        />
       </div>
       <div className="links">
         {links.map(({ link, src }, i) => {
           return (
-            <Link key={i} to={src}>
+            <Link key={i} href={src}>
               {link}
             </Link>
           );

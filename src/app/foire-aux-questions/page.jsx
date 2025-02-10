@@ -1,14 +1,13 @@
-import React, { useState } from "react";
-import TitlePage from "../components/TitlePage";
-import FaqData from "../assets/Faqata.json";
+"use client";
+import { useState } from "react";
+import FaqData from "../../assets/Faqata.json";
 
-export default function FAQ() {
+export default function Page() {
   const [clikedBlock, setClikedBlock] = useState();
   const [clickedQuestion, setClickedQuestion] = useState();
 
   return (
     <>
-      <TitlePage title="FAQ —" />
       <main id="FAQ">
         <h1>Faq</h1>
         {FaqData.map(({ title, questions }, i) => {

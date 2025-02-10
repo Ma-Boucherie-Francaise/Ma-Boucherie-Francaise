@@ -1,6 +1,7 @@
-import TitlePage from "../components/TitlePage";
-import ImageAccueil from "/ImageAccueil.jpg";
-import Pattern4Rouge from "/PatternRouge4.png";
+"use client";
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 import DecoupeData from "../assets/DecoupeData.json";
 import BlockData from "../assets/BlockData.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,20 +9,15 @@ import {
   faChevronRight,
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
-import { Link } from "react-router-dom";
 import { AnimatePresence, motion as m } from "motion/react";
 
-export default function Accueil() {
+export default function Home() {
   return (
-    <>
-      <TitlePage title="" />
-      <main id="Accueil">
-        <FirstSection />
-        <SecondSection />
-        <ThirdSection />
-      </main>
-    </>
+    <main id="Accueil">
+      <FirstSection />
+      <SecondSection />
+      <ThirdSection />
+    </main>
   );
 }
 
@@ -29,18 +25,33 @@ function FirstSection() {
   return (
     <section className="FirstSection">
       <div className="image">
-        <img src={ImageAccueil} alt="image accueil" />
+        <Image
+          src={"/ImageAccueil.jpg"}
+          alt="image accueil"
+          width={5973}
+          height={3924}
+        />
       </div>
       <div className="title">
-        <h1>Le goût de l'excellence,</h1>
+        <h1>Le goût de l&apos;excellence,</h1>
         <p>directement chez vous.</p>
       </div>
-      <Link to="/produits" className="button">
+      <Link href="/produits" className="button">
         Découvrez nos viandes
       </Link>
       <div className="patternContainer">
-        <img src={Pattern4Rouge} alt="patternRouge" />
-        <img src={Pattern4Rouge} alt="patternRouge" />
+        <Image
+          src={"/PatternRouge4.png"}
+          alt="patternRouge"
+          width={1067}
+          height={1067}
+        />
+        <Image
+          src={"/PatternRouge4.png"}
+          alt="patternRouge"
+          width={1067}
+          height={1067}
+        />
       </div>
     </section>
   );
@@ -195,7 +206,7 @@ function ThirdSection() {
             <div key={i} className="block">
               <h2>{name}</h2>
               <p>{paragraph}</p>
-              <Link className="btn" to={href}>
+              <Link className="btn" href={href}>
                 {button}
               </Link>
             </div>

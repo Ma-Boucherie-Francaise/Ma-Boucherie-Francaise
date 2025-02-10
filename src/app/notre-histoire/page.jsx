@@ -1,12 +1,10 @@
-import TitlePage from "../components/TitlePage";
-import Image1 from "/ImageHistoire1.jpg";
-import CharteQualité from "../assets/CharteQualité.json";
-import StoryData from "../assets/StoryData.json";
+import CharteQualité from "../../assets/CharteQualité.json";
+import StoryData from "../../assets/StoryData.json";
+import Image from "next/image";
 
-export default function Histoire() {
+export default function Page() {
   return (
     <>
-      <TitlePage title="Histoire —" />
       <main id="Histoire" className="redColor">
         <FirstSection />
         <SecondSection />
@@ -20,7 +18,12 @@ function FirstSection() {
     <section className="FirstSection">
       <h1>Un métier passion</h1>
       <div className="contentContainer">
-        <img src={Image1} alt="image histoire1" />
+        <Image
+          src={"/ImageHistoire1.jpg"}
+          alt="image histoire1"
+          width={5550}
+          height={4523}
+        />
         <div className="textsContainer">
           {StoryData.map(({ undertitle, text }, i) => {
             return (

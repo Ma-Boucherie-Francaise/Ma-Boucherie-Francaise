@@ -1,15 +1,14 @@
+"use client";
 import { useState } from "react";
-import ProduitsData from "../assets/ProduitsData.json";
-import TitlePage from "../components/TitlePage";
+import ProduitsData from "../../assets/ProduitsData.json";
 import { motion as m } from "motion/react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
-export default function Produits() {
+export default function Page() {
   const [projectHovered, setProjectHovered] = useState();
 
   return (
     <>
-      <TitlePage title="Produits —" />
       <main id="Produits">
         <Pictograms setProjectHovered={setProjectHovered} />
         <Texts projectHovered={parseInt(projectHovered)} />
@@ -32,7 +31,7 @@ function Pictograms({ setProjectHovered }) {
       {ProduitsData.map(({ picto, name, href }, i) => {
         return (
           <Link
-            to={href}
+            href={href}
             key={i}
             data-id={i}
             onMouseEnter={(e) => MouseEnter(e)}
