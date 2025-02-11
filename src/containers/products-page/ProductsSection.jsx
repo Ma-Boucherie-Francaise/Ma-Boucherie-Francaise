@@ -1,6 +1,7 @@
 "use client";
 import ProduitsData from "../../data/ProduitsData.json";
 import { motion as m } from "motion/react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 const ProductsSection = () => {

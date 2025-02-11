@@ -7,6 +7,7 @@ import {
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import { AnimatePresence, motion as m } from "motion/react";
+import Image from "next/image";
 
 const CuttingSection = () => {
   const [curretImage, setCurrentImage] = useState(0);
@@ -105,7 +106,7 @@ const CuttingSection = () => {
                 onMouseLeave={() => ResetHovered()}
               >
                 <div className="image">
-                  <img src={image} alt={name} />
+                  <Image fill src={image} alt={name} />
                   <AnimatePresence>
                     {hovered === i && (
                       <m.div

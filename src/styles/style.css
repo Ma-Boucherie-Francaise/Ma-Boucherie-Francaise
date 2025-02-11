@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap");
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -10,6 +8,8 @@
 }
 
 body {
+  padding: 0;
+  margin: 0;
   font-family: "Golos Text";
 }
 
@@ -92,15 +92,15 @@ header .center .links {
   display: flex;
   gap: 2vw;
 }
-header .center .links a {
+header .center .links a, header .center .links li {
   font-weight: 500;
   position: relative;
 }
-header .center .links a:hover::after {
+header .center .links a:hover::after, header .center .links li:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
-header .center .links a::after {
+header .center .links a::after, header .center .links li::after {
   content: "";
   position: absolute;
   bottom: -10%;
@@ -400,6 +400,8 @@ header .right .cartShopping:hover {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 #FAQ .faqBlockContainer .questionContainer .question:hover {
   cursor: pointer;
@@ -511,7 +513,7 @@ header .right .cartShopping:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 35%;
+  width: 25%;
 }
 #Histoire .SecondSection .cardsContainer .card:hover {
   cursor: pointer;
